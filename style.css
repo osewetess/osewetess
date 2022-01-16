@@ -1,184 +1,283 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+sans:300,400,600&display=swap');
-:root {
-    --red: hsl(0, 93%, 68%);
-    --red-light: hsl(0, 36%, 70%);
-    --dark: hsl(0, 6%, 24%);
+.button {
+    border: 1px solid transparent;
+    padding-inline: 1rem;
+    padding-block: .5rem;
+    display: inline-block;
+    font: var(--body1-medium);
+    text-decoration: none;
+    cursor: pointer;
+    color: var(white);
+    background: var(--black);
+    border-radius: .25rem;
+    outline: none;
+    box-shadow: 1.5px 31px 92px rgba(1, 1, 1, 0.4), 0.088px 2.6px 7.5px rgba(0, 0, 0, 0.07);
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.button:active {
+    transform: scale(.9);
+}
+
+.button.is-primary:hover,
+.button.is-primary:focus {
+    background: white;
+}
+
+.button:hover,
+.button:focus {
+    background-color: aliceblue;
+}
+
+:root {
+    font-size: 12px;
+    --body-back: hsl(218%, 100%, 94%);
+    --white: hsl(210%, 100%, 100%);
+    --cyan: hsl(179, 63%, 42%);
+    --cyan-light;
+    hsl(179, 51%, 62%);
+    --sky-blue: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --body1-regular: 400 0.87rem/1.25rem karla;
+    --body-medium: 700 0.87rem/1.25rem karla;
+    --title: 700 1.375rem/1.75rem karla;
+    --subtitle: 700 1rem/1.75rem karla;
 }
 
 body {
-    background: url(./pattern\ background.jpg), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-    background-size: inherit;
-    background-position-x: 8rem;
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 100vh;
-    min-height: 100vh;
+    font: var(--body1-regular);
+    margin: 0;
+    color: var(black);
+    background: var(--body-back);
+    background-color: white;
 }
 
-.d-flex {
-    display: flex !important;
+.pricipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.d-flex-inline {
-    display: inline-flex !important;
+@media screen and (min-width:425px) {
+     :root {
+        font-size: 20px;
+    }
 }
 
-.container {
-    padding: 0 12rem;
-    max-width: 55%;
-    height: auto;
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.logo {
-    margin-top: 3rem;
-    width: 5em;
-    height: 3em;
+.headerInfo {
+    margin-block-start: 1.25rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 0.85rem;
+    min-inline-size: 15rem;
+    margin-block-end: 1.5rem;
 }
 
-.image-container {
-    float: right;
-    height: 100vh;
-}
-
-.image-container img.brenda {
-    height: 50%;
-}
-
-.image-container img.brenda-mobile {
-    display: none;
-}
-
-.content {
-    margin-top: 5.5rem;
-}
-
-.content h1 {
-    color: var(--dark);
-    font-family: inherit;
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 1rem;
-    text-transform: uppercase;
-    line-height: 3.5rem;
-}
-
-.content h1 span {
-    display: block;
-}
-
-.content h1 span.text-pink {
-    color: var(--red-light);
-    font-weight: 300;
-}
-
-.content p {
-    color: var(--red-light);
+.headerInfo p {
+    font: var(--body1-regular);
+    color: var(white);
     line-height: 1.8rem;
-    margin-top: 1.2rem;
 }
 
-.form-group {
-    margin-top: 2.5rem;
-    height: 3rem;
-    position: relative;
-}
-
-.form-group input {
-    border: 1px solid var(--red-light);
-    border-radius: 2rem;
-    color: var(--red-light);
-    padding: 0.2rem 1.5rem;
-    height: 50%;
-    width: 100%;
-}
-
-.form-group button {
-    border: 0;
-    border-radius: 2rem;
-    box-shadow: hsl(0, 80%, 86%);
-    position: absolute;
-    top: 0;
-    right: 20;
-    left: 30;
-    padding-top: 10px;
-    cursor: pointer;
-}
-
-input::placeholder {
-    color: var(--red-light);
-}
-
-input:focus,
-button:focus {
-    outline: none;
-}
-
-text-error {
-    color: var(--red) !important;
+h1 {
     margin: 0;
-    margin-top: 0.5rem !important;
-    margin-left: 1rem;
-    text-align: left;
+    margin-block-end: 2rem;
 }
 
-text-success {
-    color: #44d838 !important;
+.headSubtitle {
+    color: black;
+    margin-inline-end: 1.3rem;
+}
+
+@media screen and (min-width:1440px) {
+    .headerInfo {
+        margin-inline-start: 3rem;
+        margin-inline-end: 2.85rem;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 150, 196);
+    min-block-size: 9rem;
+}
+
+infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-inline-start: 1.6rem;
+    margin-inline-end: 3.75rem;
+    min-inline-size: 15rem;
+    margin-block-start: 2.25rem;
+    margin-block-end: 1.5rem;
+}
+
+.infoTitle {
     margin: 0;
-    margin-top: 0.5% !important;
-    margin-left: 1rem;
-    text-align: left;
+    color: var(gray);
 }
 
-.icon-error {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 5.8rem;
-    display: none;
+.infoContainer p {
+    font: var(--body1-regular);
+    margin: 0;
+    color: gray;
 }
 
-@media screen and(max-width: 1440px) {
-    body {
-        background-color: var(--dark);
+@media screen and (min-width:768px) {
+    .infoContainer {
+        gap: .75rem;
     }
-    .clear-fix {
-        clear: both;
+}
+
+@media screen and (min-width:1024px) {
+    .infoContainer {
+        gap: 1.5rem;
+        margin-inline-start: 4rem;
+        margin-block-start: 1.5rem;
     }
-    .container {
+}
+
+.page {
+    display: block;
+    block-size: 84%;
+    inline-size: 60%;
+    overflow: hidden;
+    margin-block-start: 5%;
+    border-radius: .3rem;
+    box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+}
+
+@media screen and (min-width:768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" "subscription info";
+        grid-template-rows: 1fr 1fr;
+        block-size: 80vh;
+        inline-size: 70%;
+        overflow: hidden;
+        border-radius: .25rem;
+        box-shadow: rgba(99, 99, 99, 0.4) 0px 3px 9px 0px;
+    }
+}
+
+.page .header {
+    grid-area: header;
+}
+
+.page .subscription {
+    grid-area: subscription;
+}
+
+.page .info {
+    grid-area: info;
+}
+
+@media screen and (min-width:1020px) {
+    .page {
+        block-size: 80vh;
+        inline-size: 75%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .page {
+        block-size: 70vh;
+        inline-size: 60%;
+    }
+}
+
+.subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    background: var(--cyan);
+    min-block-size: 9rem;
+}
+
+.subscriptionMonth {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-inline-start: 1.5rem;
+    margin-block-start: 1.35rem;
+    min-inline-size: 12rem;
+    margin-block-end: 1.7rem;
+}
+
+.subscriptionTitle {
+    margin: 0;
+    color: var(--white);
+}
+
+.subscriptionPrice {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.price {
+    font: var(--title);
+    color: var(--white);
+}
+
+.priceMonth {
+    font: var(--body1-regular);
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.subscriptionMonth p {
+    font: var(--body1-regular);
+    color: var(--white);
+    margin: 0;
+    margin-block-end: .5rem;
+}
+
+@media screen and (min-width:768px) {
+    .subscription {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscriptionMonth {
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+        margin-inline-start: 1.5rem;
+        margin-inline-end: 1.75rem;
+        margin-block-start: 1.25rem;
+        min-inline-size: 12rem;
+        margin-block-end: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .subscriptionMonth {
+        gap: .75rem;
+        margin-block-start: 1.75rem;
+        margin-inline-start: 0;
+        margin-inline-end: 1rem;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .subscriptionMonth {
+        gap: 1.25rem;
         margin: 0;
-        height: auto;
-        min-width: 100%;
-        padding: 0 1rem;
-    }
-    .logo {
-        margin: 2rem 0;
-    }
-    .image-container {
-        width: 50%;
-        height: auto;
-        display: block;
-    }
-    .image-container img.brenda {
-        display: none;
-    }
-    .image-container img.brenda-mobile {
-        display: block;
-        width: 50%;
-    }
-    .content {
-        width: 50%;
-        display: block;
-        margin: 0;
-        padding: 5rem 1rem;
-        text-align: center;
-    }
-    .content h1 {
-        font-size: 2.5rem;
+        min-inline-size: 16rem;
     }
 }
