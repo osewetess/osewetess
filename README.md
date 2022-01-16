@@ -1,6 +1,6 @@
 hello,
-I a CS undergraduate at RIARA UNIVERSITY in Nairobi Kenya.
-I am a self taught front-end developer with no experience
+I am a CS undergraduate at RIARA UNIVERSITY in Nairobi Kenya.
+I'm a self taught front-end developer with no experience
 I love learning new technologies and problem solving
 Currently perfecting on react and javascript
 
