@@ -1,10 +1,3 @@
-hello,
-I am a CS undergraduate at RIARA UNIVERSITY in Nairobi Kenya.
-I'm a self taught front-end developer with no experience
-I love learning new technologies and problem solving
-Currently perfecting on react and javascript
-
-<!---
-osewetess/osewetess is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+As an experienced Front End Developer, the advertisement for Front End Developer job on google sparked my interest. When reviewing the position requirements and your organization's website, I was excited to find that my qualifications and personal strengths align with your needs and mission.
+I bring a comprehensive set of skills that I believe will be valuable to your company. In my Front End Developer role, I honed my abilities in time estimation and UI updates, providing a firm foundation for the Front End Developer position. My communication, people-centric nature, and compassion have afforded me excellent critical thinking skills. I am excited to contribute my talents and proficiency in leadership toward your team efforts. As an engaging communicator with a proven track record in debugging, my focus on building strong professional relationships has been a beneficial asset throughout my career.
+Please review my enclosed resume for a more in-depth illustration of my work history and accomplishments. I would appreciate the opportunity to interview at your earliest convenience. I'm eager to discuss how my personality and background fit the Front End Developer role. Thank you for your time and consideration of my candidacy.
